@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'magic -version'
+                sh 'magick -version'
             }
         }
         stage('Test') {
