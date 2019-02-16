@@ -9,6 +9,7 @@ pipeline {
                 //sh 'cd scripts'
                 //sh './convert_image.sh'
                 dir ('/scripts') { 
+                sh 'pwd'    
                 sh('convert_image.sh')
                   }
             }
