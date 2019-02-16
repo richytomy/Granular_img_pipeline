@@ -8,9 +8,9 @@ pipeline {
                 sh 'pwd'
                 //sh 'cd scripts'
                 //sh './convert_image.sh'
-            }
-          dir ('/scripts') { 
+                dir ('/scripts') { 
                 sh('convert_image.sh')
+                  }
             }
         }
         stage('Test') {
