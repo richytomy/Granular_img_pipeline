@@ -6,8 +6,8 @@ pipeline {
                 sh 'magick -version'
                 sh 'cd scripts'
                 sh 'pwd'
-                #sh 'cd scripts'
-                #sh './convert_image.sh'
+                //sh 'cd scripts'
+                //sh './convert_image.sh'
             }
           dir ('/scripts') { 
                 sh('convert_image.sh')
