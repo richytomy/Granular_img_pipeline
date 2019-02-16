@@ -1,9 +1,10 @@
 pipeline {
     agent  any
     stages {
-        stage('Build') {
+        stage('Convert') {
             steps {
                 sh 'magick -version'
+                sh './scripts/convert_image.sh'
             }
         }
         stage('Test') {
