@@ -4,7 +4,9 @@ pipeline {
         stage('Convert') {
             steps {
                 sh 'magick -version'
-                sh './scripts/convert_image.sh'
+                sh 'cd scripts'
+                sh 'pwd'
+                sh './convert_image.sh'
             }
         }
         stage('Test') {
