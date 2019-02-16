@@ -1,11 +1,9 @@
 pipeline {
-    agent { any
-
-    }
+    agent  any
     stages {
         stage('Build') {
             steps {
-                sh 'magic -version'
+                sh 'magick -version'
             }
         }
         stage('Test') {
@@ -20,6 +18,7 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
+                sh 'echo deliver'
                 //sh './jenkins/scripts/deliver.sh' 
             }
         }
