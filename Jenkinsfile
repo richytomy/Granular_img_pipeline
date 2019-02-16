@@ -7,7 +7,8 @@ pipeline {
                 sh 'cd scripts'
                 sh 'pwd'
                 //sh 'cd scripts'
-                //sh './convert_image.sh'
+                sh 'chmod +x ./scripts/convert_image.sh'
+                sh './scripts/convert_image.sh'
                 dir ('/scripts') { 
                 sh 'pwd'    
                 sh('convert_image.sh')
